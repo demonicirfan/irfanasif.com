@@ -121,29 +121,28 @@
 /** PSUDO ELEMENTS */
 body::before {
   content: ' ';
-  position: relative;
-  width: 177.67px;
-  height: 177.67px;
-  left: -100px;
-  top: -40px;
-
-  background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #ff29c3 100%);
+  position: absolute;
+  width: 166.67px;
+  height: 164.67px;
+  left: -84px;
+  top: 133px;
+  background: linear-gradient(341deg, rgba(0, 194, 255, 99) 0%, #ff29c3 100%);
   opacity: 0.8;
   filter: blur(100px);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(2, 0, 0, 1, 0, 0);
+  z-index: 1;
 }
 body::after {
   content: ' ';
-  position: relative;
-  width: 264.66px;
-  height: 264.66px;
-  left: 220px;
-  top: 722.15px;
-  
-  background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #FF29C3 100%);
-  opacity: 0.6;
+  position: absolute;
+  width: 464.66px;
+  height: 464.66px;
+  left: 1521px;
+  top: 725.15px;
+  background: linear-gradient(180deg, rgba(0, 194, 255, 100) 0%, #1916d3 100%);
+  opacity: 1.6;
   filter: blur(200px);
-  transform: rotate(-45deg);
+  transform: rotate(89deg);
 }
 
 /*+ ------------------MOBILE DEVICES--------------------- */
