@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from './Saly-13.png';
+import hero from './fly.png';
 import {
   FaSun,
   FaMoon,
@@ -33,10 +33,10 @@ function Screen() {
           </h1>
           <p className='body_description'>
             I’m a 2nd year under graduate student who is enthusiastic about
-            tech. I am a full web devloper and currently learning DevOps{' '}
+            tech. I am a full stack web devloper and currently learning DevOps{' '}
           </p>
         </div>
-        <div className='Image_container'>
+        <div className='image_container'>
           <img src={hero} alt='Hero' className='hero' />
         </div>
       </body>
