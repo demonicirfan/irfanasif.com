@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.nav {
+  position: absolute;
+  width: 309px;
+  height: 22px;
+  left: 31px;
+  top: 28px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav span:after {
+  position: absolute;
+  width: 252px;
+  height: 257.33px;
+  left: 126px;
+  top: -32px;
+
+  opacity: 0.8;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.resume {
+  position: absolute;
+  width: 55px;
+  height: 15px;
+  left: calc(50% - 55px / 2 - 121.5px);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+
+  color: #111827;
+}
+.switch {
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  left: calc(50% - 23px / 2 + 148.5px);
+}
+.heading {
+  position: absolute;
+  width: 173px;
+  height: 81px;
+  left: calc(50% - 173px / 2 - 61.5px);
+  top: 151px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #1f2937;
+
+  text-align: left;
+}
+.text_decoration1 {
+  /* Fallback: Set a background color. */
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #f59e0b, #ef4444);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.text_decoration2 {
+  /* Fallback: Set a background color. */
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #5b21b6, #9d174d);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.description {
+  position: absolute;
+  width: 220px;
+  height: 96px;
+  left: calc(50% - 220px / 2 - 38px);
+  top: 241px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  /* or 200% */
+
+  text-align: left;
+}
+.hero {
+  position: absolute;
+  width: 385px;
+  height: 385px;
+  left: calc(50% - 385px / 2 + 9.5px);
+  top: 272px;
+}
+
+.button {
+  position: absolute;
+  width: 173.64px;
+  height: 38px;
+  left: 102px;
+  top: 663px;
+}
+.socials {
+  position: absolute;
+  width: 210px;
+  height: 40px;
+  left: 85px;
+  top: 738px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.social_icon {
+  font-size: 30px;
+  color: black;
+}
+.social_icon:hover {
+  font-size: 33px;
+}
+
+.button {
+  background-color: #1f2937;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.resume_link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+/* .resume_link::after {
+    content:'';
+    width:106%;
+    position: absolute;
+    left: -2px;;
+    bottom:-1px;
+    height: 0.2rem;
+    background: #30e8bf;
+    background: -webkit-linear-gradient(to right, #30e8bf, #ff8235);
+    background: linear-gradient(to right, #30e8bf, #ff8235);
+  transition: 0.2s;
+  z-index: -1;
+}
+.resume_link:hover::after {
+  height: 1.2rem; 
+}*/
+
+/*-------------- Typing effect --------------- */
+body::before {
+  content: ' ';
+  position: absolute;
+  width: 177.67px;
+  height: 177.67px;
+  left: 51.67px;
+  top: 9px;
+  
+  background: linear-gradient(180deg, #F22FB0 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
+  filter: blur(100px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+body::after {
+    content: ' ';
+    position: absolute;
+    width: 285.22px;
+    height: 285.22px;
+    left: 145.82px;
+    top: 828.8px;
+    
+    background: linear-gradient(180deg, #FF7BCA 0%, rgba(255, 197, 111, 0.46) 100%);
+    filter: blur(200px);
+    transform: matrix(0.97, -0.26, -0.26, -0.97, 0, 0);
+}
