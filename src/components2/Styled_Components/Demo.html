@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        position: inherit;
+      }
+      h1 {
+        position: relative;
+        color: rgb(0, 0, 0);
+        
+      }
+      .headline {
+        width: 100%;
+        font: 8vw system-ui, sans-serif;
+        font-weight: 900;
+        height: 150px;
+      }
+      @supports (backdrop-filter: blur(10px)) {
+        .visually-hidden {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+        h1 {
+          backdrop-filter: blur(5px);
+          background: rgba(0, 0, 0, 0.1);
+          clip-path: url(#lockup-headline-mask-path);
+        }
+      }
+      .text {
+        color: rgb(60, 0, 201);
+        position: relative;
+        top: 104%;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="text">Irfan</h2>
+    <h1 class="headline">
+      <span class="visually-hidden">Irfan</span>
+      <svg
+        aria-hidden="true"
+        id="lockup-headline-mask"
+        class="headline lockup-headline-mask visually-hidden"
+      >
+        <clipPath id="lockup-headline-mask-path">
+          <text
+            dominant-baseline="hanging"
+            text-anchor="middle"
+            x="50%"
+            y="0em"
+            dy="0.125em"
+          >
+            Irfan
+          </text>
+        </clipPath>
+      </svg>
+    </h1>
+  </body>
+</html>

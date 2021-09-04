@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+.container {
+  height: auto;
+  display: grid;
+  align-content: space-around;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 64px;
+}
+.headline {
+  width: 100%;
+  font-family: Roboto;
+  font-weight: 900;
+  height: 80px;
+  backdrop-filter: blur(5px);
+  background: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /*chnage this to change the bigger text color */
+  clip-path: url(#lockup-headline-mask-path);
+}
+.visually-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/** Screens below the size fo laptop screen*/
+@media all and (max-width: 960px) {
+  h1 {
+    font-size: 64px;
+  }
+  .headline {
+    height: 80px;
+  }
+}
+/** Screens below the size fo tablet screen*/
+@media all and (max-width: 760px) {
+  h1 {
+    font-size: 44px;
+  }
+  .headline {
+    height: 50px;
+  }
+}
+/** Screens below the size fo mobile screen*/
+@media all and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+  .headline {
+    height: 30px;
+  }
+}
