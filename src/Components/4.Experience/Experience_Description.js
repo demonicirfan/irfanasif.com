@@ -5,48 +5,48 @@ function Experience_Description() {
     <div className='container'>
       <div class='timeline'>
         <ul>
-          <li>
+          <li className="list">
             <div class='timeline-content'>
-              <h1>Heading 1</h1>
-              <h2>Subheading</h2>
+              <h1 className="Heading_top">Heading 1</h1>
+              <h2 className="subHeading">Subheading 1</h2>
               <h3 class='date'>20th may, 2010</h3>
-              <p>
+               <p className="para">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur tempora ab laudantium voluptatibus aut eos placeat
                 laborum, quibusdam exercitationem labore.
               </p>
             </div>
           </li>
-          <li>
+          <li className="list">
             <div class='timeline-content'>
-              <h1>Heading 2</h1>
-              <h2>Subheading</h2>
+              <h1 className="Heading_top">Heading 2</h1>
+              <h2 className="subHeading">Subheading 2</h2>
               <h3 class='date'>20th may, 2010</h3>
-              <p>
+               <p className="para">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur tempora ab laudantium voluptatibus aut eos placeat
                 laborum, quibusdam exercitationem labore.
               </p>
             </div>
           </li>
-          <li>
+          <li className="list">
             <div class='timeline-content'>
-              <h1>Heading 3</h1>
-              <h2>Subheading</h2>
+              <h1 className="Heading_top">Heading 3</h1>
+              <h2 className="subHeading">Subheading 3</h2>
               <h3 class='date'>20th may, 2010</h3>
-              <p>
+               <p className="para">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur tempora ab laudantium voluptatibus aut eos placeat
                 laborum, quibusdam exercitationem labore.
               </p>
             </div>
           </li>
-          <li>
+          <li className="list">
             <div class='timeline-content'>
-              <h1>Heading 4</h1>
-              <h2>Subheading</h2>
+              <h1 className="Heading_top">Heading 4</h1>
+              <h2 className="subHeading">Subheading 4</h2>
               <h3 class='date'>20th may, 2010</h3>
-              <p>
+               <p className="para">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur tempora ab laudantium voluptatibus aut eos placeat
                 laborum, quibusdam exercitationem labore.

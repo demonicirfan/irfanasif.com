@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 .container {
   height: auto;
-  display: grid;
+  display: flex;
   position: absolute;
 }
-h1 {
-  position: relative;
-  color: rgb(0, 0, 0);
-  font-size: 64px;
-}
 .headline {
+  position: relative;
   align-self: flex-start;
   width: 40vw;
+  top: 1vh;
   font-family: Roboto;
+  font-size: 64px;
   font-weight: 900;
-  height: 80px;
+  color: rgb(0, 0, 0);
   backdrop-filter: blur(5px);
   background: rgba(0, 0, 0, 0.1);
   clip-path: url(#lockup-headline-mask-path);
@@ -33,51 +31,41 @@ h1 {
 }
 /** Screens below the size fo Ultrawide screen*/
 @media all and (max-width: 1600px) {
-  h1 {
+  .headline {
     font-size: 64px;
     transform: translateX(-70px);
-  }
-  .headline {
     height: 80px;
   }
 }
 @media all and (max-width: 1024px) {
-  h1 {
+  .headline {
     font-size: 64px;
     transform: translateX(-30px);
-  }
-  .headline {
     height: 80px;
   }
 }
 /** Screens below the size fo laptop screen*/
 @media all and (max-width: 960px) {
-  h1 {
+  .headline {
     font-size: 64px;
     transform: translateX(10px);
-  }
-  .headline {
     height: 80px;
   }
 }
 /** Screens below the size fo tablet screen*/
 @media all and (max-width: 768px) {
-  h1 {
+  .headline {
     font-size: 44px;
     transform: translateX(-4vw);
-  
-  }
-  .headline {
     height: 50px;
   }
 }
 /** Screens below the size fo mobile screen*/
 @media all and (max-width: 480px) {
-  h1 {
+  .headline {
+    left: 10px;
     font-size: 24px;
     transform: translateX(-2.9vw);
-  }
-  .headline {
     height: 50px;
   }
 }

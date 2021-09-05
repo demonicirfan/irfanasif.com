@@ -3,8 +3,8 @@ import "./Heading2_layout.css"
 
 function Heading2_layout({ children }) {
   return (
-    <div class="container">
-      <h2>{children}</h2>
+    <div className="container">
+      <h2 className="top_component">{children}</h2>
     </div>
   );
 }

@@ -8,57 +8,48 @@ html {
   font-family: 'Roboto';
 }
 .container {
-  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 100px 0;
+  justify-content: left;
   background-color: rgb(255, 255, 255);
 }
 .timeline {
+  top: 7vh;
   width: 80%;
   height: auto;
   max-width: 200vw;
   margin: 0 auto;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .timeline ul {
   list-style: none;
 }
-.timeline ul li {
-  padding: 20px, 15px;
+.Heading_top {
   color: rgb(0, 0, 0);
-  margin-bottom: 20px;
-}
-.timeline ul li:last-child {
-  margin-bottom: 0;
-}
-.timeline-content h1 {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 10px;
-  margin-left: 10px;
 }
-.timeline-content h2 {
+.subHeading {
   font-weight: 400;
   font-size: 23px;
   line-height: 30px;
   margin-bottom: 10px;
-  margin-left: -11px;
 }
-.timeline-content p {
-  font-size: 15px;
+.date {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.para {
+  font-size: 20px;
   line-height: 25px;
   font-weight: 300;
-}
-.timeline-content .date {
-  font-size: 12px;
-  font-weight: 300;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -66,15 +57,11 @@ html {
     content: '';
     position: absolute;
     top: 0;
-    left: 10%;
-    transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
   }
   .timeline ul li {
-    width: 80%;
-    float: right;
     position: relative;
     margin-bottom: 50px;
   }
@@ -83,28 +70,29 @@ html {
     position: absolute;
     height: 20px;
     width: 20px;
+    left: -26.4%;
     border-radius: 50%;
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
     top: 0px;
-    left: -14.4%;
   }
-  .timeline-content h1 {
+  .list {
+    width: 80%;
+    float: right;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .Heading_top {
     font-size: 32px;
     left: 20px;
   }
-  .timeline-content h2 {
+  .subHeading {
     font-size: 26px;
     left: 9px;
   }
-  .timeline-content p {
+  .para {
     font-size: 18px;
   }
-  .timeline ul li:hover::before {
-    background-color: rgb(30, 31, 31);
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .timeline-content h1 {
-    left: 60px;
+  .list:hover::before {
+    background-color: rgb(153, 153, 153);
   }
 }
