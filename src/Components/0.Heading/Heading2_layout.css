@@ -7,16 +7,17 @@
   
 }
 /** Screens below the size fo laptop screen*/
-@media all and (max-width: 1600px) {
+@media all and (max-width: 3000px) {
   .top_component {
-    font-size: 48px;
+    font-size: 40px;
     left: 5%;
   }
 }
+
 /** Screens below the size fo laptop screen*/
 @media all and (max-width: 960px) {
   .top_component {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 /** Screens below the size fo tablet screen*/
