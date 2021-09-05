@@ -1,5 +1,5 @@
 import React from 'react';
-import Experience from './Experience';
+import Experience from '../../Components/4.Experience/Experience';
 import Section from './Section';
 
 

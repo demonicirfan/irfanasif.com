@@ -1,0 +1,34 @@
+.container {
+  position: inherit;
+}
+h2 {
+  position: relative;
+  top: 90%;
+  
+}
+/** Screens below the size fo laptop screen*/
+@media all and (max-width: 1600px) {
+  h2 {
+    font-size: 48px;
+    left: 5%;
+  }
+}
+/** Screens below the size fo laptop screen*/
+@media all and (max-width: 960px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+/** Screens below the size fo tablet screen*/
+@media all and (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+/** Screens below the size fo mobile screen*/
+@media all and (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+}

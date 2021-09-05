@@ -2,24 +2,21 @@
 .container {
   height: auto;
   display: grid;
-  align-content: space-around;
+  position: absolute;
 }
 h1 {
+  position: relative;
   color: rgb(0, 0, 0);
   font-size: 64px;
 }
 .headline {
-  width: 100%;
+  align-self: flex-start;
+  width: 40vw;
   font-family: Roboto;
   font-weight: 900;
   height: 80px;
   backdrop-filter: blur(5px);
-  background: rgba(
-    0,
-    0,
-    0,
-    0.1
-  ); /*chnage this to change the bigger text color */
+  background: rgba(0, 0, 0, 0.1);
   clip-path: url(#lockup-headline-mask-path);
 }
 .visually-hidden {
@@ -28,19 +25,47 @@ h1 {
   left: -9999px;
 }
 
+@media all and (max-width: 1024px) {
+  /* h1 {
+    transform: translateX(-258px);
+  }
+   */
+}
+/** Screens below the size fo Ultrawide screen*/
+@media all and (max-width: 1600px) {
+  h1 {
+    font-size: 64px;
+    transform: translateX(-70px);
+  }
+  .headline {
+    height: 80px;
+  }
+}
+@media all and (max-width: 1024px) {
+  h1 {
+    font-size: 64px;
+    transform: translateX(-30px);
+  }
+  .headline {
+    height: 80px;
+  }
+}
 /** Screens below the size fo laptop screen*/
 @media all and (max-width: 960px) {
   h1 {
     font-size: 64px;
+    transform: translateX(10px);
   }
   .headline {
     height: 80px;
   }
 }
 /** Screens below the size fo tablet screen*/
-@media all and (max-width: 760px) {
+@media all and (max-width: 768px) {
   h1 {
     font-size: 44px;
+    transform: translateX(-4vw);
+  
   }
   .headline {
     height: 50px;
@@ -50,8 +75,9 @@ h1 {
 @media all and (max-width: 480px) {
   h1 {
     font-size: 24px;
+    transform: translateX(-2.9vw);
   }
   .headline {
-    height: 30px;
+    height: 50px;
   }
 }
